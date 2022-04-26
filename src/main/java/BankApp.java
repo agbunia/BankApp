@@ -11,6 +11,7 @@ public class BankApp {
         System.out.println("Hello in our bank!");
         System.out.println("1. Display account details");
         System.out.println("2. Deposit money");
+        System.out.println("3. Withdraw money");
         System.out.println("Enter your choice");
 
         int choice;
@@ -21,6 +22,9 @@ public class BankApp {
             }
             case 2: {
                 account.depositMoney();
+            }
+            case 3: {
+                account.withdrawal();
             }
 
         }

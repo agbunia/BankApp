@@ -62,4 +62,18 @@ public class Account {
         balance = balance + amount;
         System.out.println("Your current balance is: " + balance + " PLN");
     }
+
+    public void withdrawal() {
+        System.out.println("How much money do you want to withdraw?");
+        long amount = scanner.nextLong();
+//        balance = balance - amount;
+//        System.out.println("Your current balance is: " + balance + " PLN");
+        if (balance>= amount){
+            balance = balance - amount;
+            System.out.println("Your current balance is: " + balance + " PLN");
+        }
+        else{
+            System.out.println("Your balance is smaller than " + amount + " PLN");
+        }
+    }
 }

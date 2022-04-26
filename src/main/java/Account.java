@@ -76,4 +76,13 @@ public class Account {
             System.out.println("Your balance is smaller than " + amount + " PLN");
         }
     }
+
+    public boolean search(String accountNumber) {
+        if(accNumber.equals(accountNumber)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
